@@ -28,7 +28,7 @@ Para visualizar o projeto localmente, siga as instruções abaixo:
 1. Clone o repositório:
 
    ```bash
-   git clone git@github.com:Vitor-C-Souza/portfolio.git
+   git clone https://github.com/Vitor-C-Souza/portfolio.git
    ```
 
 2. Abra o projeto no Visual Studio Code:
