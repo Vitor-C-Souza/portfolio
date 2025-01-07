@@ -6,6 +6,13 @@
     <meta name="description" content="Projeto Portfólio" />
     <meta name="author" content="Vítor Cavalcante Souza" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA&display=swap"
+      rel="stylesheet"
+    />
     <title>Vítor Cavalvante Souza</title>
   </head>
   <body>
@@ -42,57 +49,69 @@
       <!-- Seção Formulário de Contato e Redes Sociais -->
       <section id="contact">
         <!-- Seção do Formulário-->
-        <form action="#" method="submit" id="formulario">
-          <label for="nome">Nome: </label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Digite seu nome"
-            required
-          />
-          <span id="txtNome"></span>
+        <form action="#" method="submit" id="formulario" class="main-container">
+          <div class="style-form-input full">
+            <label for="nome">Nome: </label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Digite seu nome"
+              required
+            />
+            <span id="txtNome"></span>
+          </div>
 
-          <label for="email">Email: </label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Digite seu email"
-            required
-          />
-          <span id="txtEmail"></span>
+          <div class="align-email-subject">
+            <div class="style-form-input">
+              <label for="email">Email: </label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Digite seu email"
+                required
+              />
+              <span id="txtEmail"></span>
+            </div>
 
-          <label for="subject">Assunto: </label>
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            placeholder="Digite o título da mensagem"
-            required
-          />
-          <span id="txtSubject"></span>
+            <div class="style-form-input right">
+              <label for="subject">Assunto: </label>
+              <input
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="Digite o assunto da mensagem"
+                required
+              />
+              <span id="txtSubject"></span>
+            </div>
+          </div>
 
-          <label for="message">Mensagem: </label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Digite sua mensagem"
-            required
-          >
-          </textarea>
+          <div class="style-form-input full">
+            <label for="message">Mensagem: </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Digite sua mensagem"
+              required
+            >
+            </textarea>
+          </div>
 
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btn-submit">Enviar</button>
         </form>
 
         <!-- Seção do Google Maps -->
-        <article id="mapa">
-          <p>Rua Manoel de Oliveira Ramos, 11</p>
-          <p>Cubatão - SP</p>
+        <article id="mapa" class="main-container">
+          <div class="endereco">
+            <p>Rua Manoel de Oliveira Ramos, 11</p>
+            <p>Cubatão - SP</p>
+          </div>
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.797140006003!2d-46.43216042380222!3d-23.932236478546677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1a3296e452c1%3A0xa9906bac4883161e!2sR.%20Manuel%20de%20Oliveira%20Ramos%20-%20Jardim%20Caraguat%C3%A1%2C%20Cubat%C3%A3o%20-%20SP%2C%2011535-050!5e0!3m2!1spt-BR!2sbr!4v1736254984131!5m2!1spt-BR!2sbr"
-            width="600"
+            width="100%"
             height="450"
             style="border: 0"
             allowfullscreen=""
