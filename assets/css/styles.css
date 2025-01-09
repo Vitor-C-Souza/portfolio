@@ -129,6 +129,11 @@ main {
       min-height: 600px;
     }
 
+    span {
+      color: red;
+      padding-left: 24px;
+    }
+
     #formulario {
       display: flex;
       flex-direction: column;
