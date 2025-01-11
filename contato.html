@@ -11,45 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+AU+SA:wght@100..400&display=swap"
       rel="stylesheet"
     />
     <title>Vítor Cavalvante Souza</title>
   </head>
   <body>
-    <!-- Cabeçalho da Página (header) -->
-    <header>
-      <!-- Div Conteudo do Cabeçalho -->
-      <div id="header_content">
-        <!-- Titulo do Cabeçalho -->
-        <div id="titulo">
-          <!-- Seu nome -->
-          <h1>Vítor Cavalcante Souza</h1>
-        </div>
-
-        <!-- Conteudo do Menu da Página (header) -->
-        <div id="menu">
-          <!-- Menu da Página -->
-          <nav>
-            <!-- Marcadores não ordenados + links -->
-            <ul id="menu">
-              <li>
-                <a href="index.html"> Home </a>
-              </li>
-              <li>
-                <a href="contato.html"> Contato </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <!-- Seção Principal da Página (main) -->
+    <header id="cabecalho"></header>
     <main>
-      <!-- Seção Formulário de Contato e Redes Sociais -->
       <section id="contact">
-        <!-- Seção do Formulário-->
         <form action="#" method="submit" id="formulario" class="main-container">
           <div class="style-form-input full">
             <label for="nome">Nome: </label>
@@ -82,7 +52,7 @@
                 id="subject"
                 type="text"
                 name="subject"
-                placeholder="Digite o assunto da mensagem"
+                placeholder="Digite o assunto"
                 required
               />
               <span id="txtSubject"></span>
@@ -102,7 +72,6 @@
           <button type="submit" class="btn-submit">Enviar</button>
         </form>
 
-        <!-- Seção do Google Maps -->
         <article id="mapa" class="main-container">
           <div class="endereco">
             <p>Rua Manoel de Oliveira Ramos, 11</p>
@@ -121,28 +90,9 @@
         </article>
       </section>
     </main>
-
-    <!-- Rodapé da Página (footer) -->
-    <footer>
-      <!-- Seção de Contato - Redes Sociais-->
-      <section id="redes_sociais">
-        <a
-          href="https://www.linkedin.com/in/vitorcavalcantesouza/"
-          target="_blank"
-        >
-          <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="https://github.com/Vitor-C-Souza" target="_blank">
-          <img src="assets/img/github.svg" alt="Github" />
-        </a>
-        <a href="https://www.instagram.com/vitorcavalcante97/" target="_blank">
-          <img src="assets/img/instagram.svg" alt="Instagram" />
-        </a>
-      </section>
-
-      <h3>Feito com 🧡 por Vítor Cavalcante Souza - 2025</h3>
-    </footer>
-    <!-- Script JavaScript-->
-    <script src="assets/js/script.js"></script>
+    <div id="contact">
+      <footer id="rodape"></footer>
+    </div>
+    <script type="module" src="./assets/js/script.js"></script>
   </body>
 </html>
