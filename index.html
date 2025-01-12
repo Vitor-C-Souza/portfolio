@@ -18,66 +18,15 @@
   <body>
     <header id="cabecalho"></header>
     <main>
-      <section id="about" class="main-container">
-        <h2>Sobre Mim</h2>
-
-        <div id="conteudo">
-          <img
-            src="./assets/img/profile.jpg"
-            alt="Foto do criador desse conteudo"
-          />
-
-          <article id="sobre_texto">
-            <p>
-              Desenvolvedor Back-end apaixonado por transformar ideias em
-              soluções eficientes e escaláveis. Com forte experiência em Java,
-              Spring Boot e Kotlin, construo APIs RESTful robustas e seguras,
-              integrando as melhores práticas em testes com JUnit e Mockito.
-              Tenho prática em projetos que utilizam AWS para serviços em nuvem,
-              aprimorando a entrega e o desempenho das aplicações.
-            </p>
-            <p>
-              Meus projetos pessoais, como Adopet-API, Controle de Orçamento
-              Familiar API e Star Wars API, destacam meu comprometimento com
-              inovação e entrega de valor. Valorizo a colaboração em equipe e
-              busco sempre implementar soluções que melhorem a experiência dos
-              usuários.
-            </p>
-            <p>
-              Com um sólido conhecimento em React, TypeScript e SCSS, também
-              tenho uma visão full stack, possibilitando um entendimento
-              completo do ciclo de desenvolvimento. Movido por desafios, amo
-              aprender novas tecnologias e evoluir minhas habilidades para
-              contribuir em projetos de impacto.
-            </p>
-            <p>
-              Sinta-se a vontade para entrar em contato através do meu e-mail.
-            </p>
-            <p>
-              e-mail: vitor_souza97@hotmail.com <br />
-              Portfólio GitHub: https://github.com/Vitor-C-Souza
-            </p>
-          </article>
-        </div>
-      </section>
-      <section id="video" class="main-container">
-        <h2>Meu vídeo favorito:</h2>
-
-        <div class="youtube">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/VgDgWzBL7s4?si=JSPNJYePHwcwb1JD"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
+      <div id="home"></div>
+      <div id="projetos"></div>
+      <div id="contato"></div>
     </main>
     <footer id="rodape"></footer>
+    <button id="backToTop" class="hidden">
+      <img src="./assets/img/arrow_up.svg" alt="arrow up" />
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script type="module" src="./assets/js/script.js"></script>
   </body>
 </html>

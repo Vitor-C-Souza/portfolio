@@ -1,8 +1,14 @@
-import { Base } from "./base.js";
+import { Renderizar } from "./base.js";
 import { Validation } from "./validation.js";
+import { Api } from "./apiService.js";
+import { Animation } from "./animacoes.js";
+import { Interacao } from "./interacao.js";
 
+const api = new Api();
 const validation = new Validation();
-const base = new Base();
+const renderizar = new Renderizar();
+const animation = new Animation();
+const interacao = new Interacao();
 
 const formulario = document.querySelector("#formulario");
 if (formulario) {
@@ -13,7 +19,13 @@ if (formulario) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  base.header();
-  base.footer();
-  base.transition();
+  api.fetchData(1);
+  renderizar.header();
+  renderizar.footer();
+  renderizar.home();
+  renderizar.projetos();
+  renderizar.contato();
+  interacao.backToTop();
+  animation.transition();
+  animation.scrollPage();
 });

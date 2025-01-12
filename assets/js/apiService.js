@@ -5,7 +5,6 @@ export class Api {
     axios
       .get(url)
       .then((response) => {
-        console.log(response.data);
         this.displayData(response.data);
       })
       .catch((error) => {
@@ -28,13 +27,6 @@ export class Api {
           const card = document.createElement("div");
           const link = document.createElement("a");
           repoItem.classList.add("repo-item", "main-container");
-
-          if (ordem) {
-            card.classList.add("right");
-          } else {
-            card.classList.add("left");
-          }
-          ordem = !ordem;
 
           link.href = repo.html_url;
           link.target = "_blank";
