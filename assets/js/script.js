@@ -19,12 +19,13 @@ if (formulario) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  api.fetchData(1);
+  api.fetchData();
   renderizar.header();
   renderizar.footer();
   renderizar.home();
   renderizar.projetos();
   renderizar.contato();
+  renderizar.curriculo();
   interacao.backToTop();
   animation.transition();
   animation.scrollPage();

@@ -3,6 +3,7 @@ const footer = document.getElementById("rodape");
 const home = document.getElementById("home");
 const contato = document.getElementById("contato");
 const projeto = document.getElementById("projetos");
+const curriculo = document.getElementById("curriculo");
 
 export class Renderizar {
   header() {
@@ -15,8 +16,8 @@ export class Renderizar {
           <div id="menu">
             <nav>
               <ul id="menu">
-                <li><a href="index.html">Home</a></li>
                 <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#curriculo">Curriculo</a></li>
                 <li><a href="#contato">Contato</a></li>
               </ul>
             </nav>
@@ -49,7 +50,7 @@ export class Renderizar {
   home() {
     if (home) {
       home.innerHTML = `<section id="about" class="main-container">
-        <h2>Sobre Mim</h2>
+        <h1>Sobre Mim</h1>
 
         <div id="conteudo">
           <img
@@ -110,7 +111,7 @@ export class Renderizar {
   }
 
   contato() {
-    contato.innerHTML = `<h2>Contato</h2>
+    contato.innerHTML = `<h1>Contato</h1>
         <section id="contact">
           <form action="#" method="submit" id="formulario" class="main-container">
             <div class="style-form-input full">
@@ -185,8 +186,218 @@ export class Renderizar {
 
   projetos() {
     projeto.innerHTML = `
-                          <h2>Projetos</h2>
+                          <h1>Projetos</h1>
                           <div id="repos-list"></div>
                         `;
+  }
+
+  curriculo() {
+    curriculo.innerHTML = `
+    <h1>Currículo</h1>
+        <section class="curriculo__cabecalho main-container">
+          <center><h2>VÍTOR CAVALCANTE SOUZA</h2></center>
+          <p>Cubatão – SP</p>
+          <p>Telefone: (013) 99616.1719</p>
+          <p>E-mail: vitor_souza97@hotmail.com</p>
+          <p>Github: https://github.com/Vitor-C-Souza</p>
+          <p>Linkedin: https://www.linkedin.com/in/vitorcavalcantesouza/</p>
+        </section>
+        <section class="resumo main-container">
+          <h3>RESUMO PROFISSIONAL</h3>
+          <p>
+            Sou desenvolvedor Backend formado em Ciências da Computação pela
+            UNIP, capaz de criar sistemas otimizados e com códigos fáceis de
+            entender e soluções eficientes, e tenho um sólido conhecimento em
+            Java com Spring Boot na área de desenvolvimento de sistemas, mas
+            também já atuei em projetos relacionados à Rest API, Autenticação,
+            POO e Banco de Dados. Possuo um perfil comunicativo e proativo que
+            me permite encontrar soluções em equipe em qualquer projeto. Como
+            desenvolvedor backend tenho habilidade em lidar com sistemas e
+            infraestrutura e isso me permite ser mais analítico e automatizar
+            processos.
+          </p>
+        </section>
+        <section class="habilidades_tecnicas main-container">
+          <h3>Habilidades Técnicas:</h3>
+          <ul>
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>MySql</li>
+            <li>MongoDB</li>
+            <li>API Restful</li>
+            <li>Git</li>
+            <li>Docker</li>
+            <li>AWS</li>
+            <li>Kubernetes</li>
+            <li>Nginx</li>
+            <li>Junit</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Angular</li>
+          </ul>
+        </section>
+        <section class="educacao main-container">
+          <h3>Educação</h3>
+          <ul>
+            <li>
+              <span> Bootcamp - Desenvolvedor Java Full Stack </span>| Data de
+              conclusão: 01/2025
+              <br />
+              Instituição: Generation Brasil.
+            </li>
+            <li>
+              <span>Graduação - Ciências da computação</span>| Data de
+              conclusão: 12/2022 <br />
+              Instituição: UNIP
+            </li>
+          </ul>
+        </section>
+        <section class="experiencias__profissionais main-container">
+          <h3>Experiências Profissionais</h3>
+          <ul>
+            <li>
+              <span>Santos Port Authority - Estagiário de TI</span>
+              | 03/2022 – 12/2022 <br />
+              <br />
+              <h4>Principais Responsabilidades:</h4>
+              <ul>
+                <li>
+                  Suporte técnico aos funcionários, atendendo diversos usuários
+                  do Porto de Santos.
+                </li>
+                <li>
+                  Participação na gerência de infraestrutura de dados,
+                  auxiliando na manutenção e controle do ambiente de TI.
+                </li>
+                <li>
+                  Colaboração com equipes para resolução de problemas e
+                  melhorias contínuas.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="idiomas main-container">
+          <h3>Idiomas</h3>
+          <ul>
+            <li>Inglês - Avançado</li>
+          </ul>
+        </section>
+        <section class="cursos main-container">
+          <h3>Cursos Extra Curriculares & Certificações</h3>
+          <table>
+            <tr>
+              <td>Java Web: crie aplicações usando Spring Boo</td>
+              <td>Alura</td>
+              <td>40 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Java e Spring Boot</td>
+              <td>Alura</td>
+              <td>34 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Integração Contínua e Entrega Contínua</td>
+              <td>Alura</td>
+              <td>48 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Boas Práticas em Java</td>
+              <td>Alura</td>
+              <td>31 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>
+                Aprofunde em Java com arquitetura de Microsserviços, Spring e
+                RabbitMQ
+              </td>
+              <td>Alura</td>
+              <td>40 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Mensageria com Apache Kafka</td>
+              <td>Alura</td>
+              <td>43 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Aprenda a programar em Java com Orientação a Objetos</td>
+              <td>Alura</td>
+              <td>39 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>
+                AWS: Observabilidade com CloudWatch e Containers com ECS e EKS
+              </td>
+              <td>Alura</td>
+              <td>17 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>
+                Começando na AWS com Lightsail, EC2, S3, VPC, RDS e DynamoDB
+              </td>
+              <td>Alura</td>
+              <td>47 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Arquitetura Java: do design de código à infraestrutura</td>
+              <td>Alura</td>
+              <td>27 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Consultas com MySQL</td>
+              <td>Alura</td>
+              <td>42 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Infraestrutura como código</td>
+              <td>Alura</td>
+              <td>42 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Angular: crie aplicações web ágeis</td>
+              <td>Alura</td>
+              <td>85 Horas</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Começando em DevOps</td>
+              <td>Alura</td>
+              <td>54 Horas</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Melhore sua experiência de desenvolvimento com TypeScript</td>
+              <td>Alura</td>
+              <td>31 Horas</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Explore React com JavaScript</td>
+              <td>Alura</td>
+              <td>65 Horas</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>CSS: aprofunde em estilos</td>
+              <td>Alura</td>
+              <td>36 Horas</td>
+              <td>2023</td>
+            </tr>
+          </table>
+        </section>`;
   }
 }

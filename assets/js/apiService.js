@@ -18,7 +18,6 @@ export class Api {
     if (!reposList) return;
 
     reposList.innerHTML = "";
-    let ordem = true;
     let delay = 0;
     repos.forEach((repo) => {
       if (repo.description != null) {
